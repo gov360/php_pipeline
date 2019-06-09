@@ -1,9 +1,9 @@
 pipeline {
-    agent { docker 'alpine' }
+    agent { docker run -d -name myalpine 'alpine' }
     stages {
         stage('build') {
             steps {
-                sh 'alpine --version'
+                sh 'docker inspect myalpine'
             }
         }
     }
