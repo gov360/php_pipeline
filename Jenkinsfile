@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-               docker 'info'
+              sh 'pwd'
             }
         }
     }
