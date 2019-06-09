@@ -1,5 +1,5 @@
 pipeline {
-    agent { docker 'webstream/php-alpine' }
+    agent { docker 'alpine' }
     stages {
         stage('build') {
             steps {
