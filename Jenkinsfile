@@ -1,5 +1,5 @@
 pipeline {
-    agent { docker 'lebr1/php-alpine' }
+    agent { docker 'php-alpine' }
     stages {
         stage('build') {
             steps {
